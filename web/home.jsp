@@ -55,7 +55,7 @@
         <th scope="col">ID</th>
         <th scope="col">NAME</th>
         <th scope="col">DESCRIPTION</th>
-        <th scope="col">DEADLINE DATE</th>
+        <th scope="col">DETAILS</th>
     </tr>
     </thead>
     <tbody>
@@ -67,7 +67,7 @@
         <th scope="row"><%=task.getId()%></th>
         <td><%=task.getName()%></td>
         <td><%=task.getDescription()%></td>
-        <td><%=task.getDeadlineDate()%></td>
+        <td><a href="/task-details?id=<%=task.getId()%>" class="btn btn-dark">DETAILS</a></td>
     </tr>
     <%
         }
